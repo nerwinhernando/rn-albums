@@ -3,7 +3,7 @@ import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
 
-const AlbumDetail = ({album}) => {
+const AlbumDetail = ({ album }) => {
     const { title, artist, thumbnail_image, image } = album;
     const { 
         thumbnailStyle, 
@@ -30,7 +30,7 @@ const AlbumDetail = ({album}) => {
             <CardSection>
                 <Image 
                     style={imageStyle}
-                    source= {{uri: image }} 
+                    source={{ uri: image }} 
                 />
             </CardSection>
         </Card>
